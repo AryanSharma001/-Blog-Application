@@ -8,10 +8,29 @@ xhr.onreadystatechange = ()=>{
         const objects = JSON.parse(xhr.responseText)
         var output = ''
         objects.forEach(object => {
-            output+='<p>${object.body}</p>'
+            document.querySelector('.row').appendChild(addCard(object))
         });
         console.log(output)
     }
 }
-
 xhr.send()
+
+function addCard(object){
+    const col = document.createElement('div')
+    col.setAttribute('class','column')
+    const card = document.createElement('div')
+    card.setAttribute('class','card')
+    const h2 = document.createElement('h2')
+    h2.textContent = object.id
+    const h3 = document.createElement('h3')
+    h3.textContent = object.title
+    const P = document.createElement('P')
+    P.textContent = object.body
+    card.appendChild(h2)
+    card.appendChild(h3)
+    card.appendChild(P)
+    col.appendChild(card)
+
+    return col
+
+}

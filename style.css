@@ -1,0 +1,144 @@
+body{
+    box-sizing: border-box;
+    background-color: #10BBE5;
+}
+*{
+    padding: 0%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+#hero
+{
+    height: 100vh;
+    width: 100%;
+
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:3%;
+    padding-bottom: 2%;
+    border: 4px solid black;
+    border-color: black;
+    align-items: absolute;
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-left: 9%;
+    padding-right: 9%;
+
+}
+.logo{
+    
+    color:black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: aliceblue;
+
+}
+.logo:hover{
+    background-color:  none;
+    color:rgb(255, 255, 255);
+    border: 2px solid transparent;
+    cursor:pointer;
+}
+span:hover{
+    color:black;
+    cursor:pointer;
+}
+nav ul li{
+    list-style-type:none;
+    display: inline-flex;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:black;
+    transition: .4s;
+}
+button{
+    background-color:#10BBE5;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    padding:13px 30px;
+    transition:.4s;
+    
+}
+button:hover{
+    background-color:  none;
+    color:black;
+    border: 2px solid transparent;
+    cursor:pointer;
+}
+
+img {
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    justify-content: center;
+    padding: auto;
+    border: #10BBE5;
+    box-shadow: #10BBE5;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;
+    display: flex;
+    flex-wrap:wrap ;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    
+    content: "";
+    
+    clear: both;
+    
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    margin:4%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    padding-top:3px;
+    padding-bottom:55px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+.footer{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color:#f1f1f1;
+    padding-top: 100px;
+    padding-left: 100px;
+}  
